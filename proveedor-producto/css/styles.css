@@ -1,0 +1,94 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor del menú principal */
+.menu-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título del menú */
+.menu-container h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Lista de opciones */
+.menu-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-container ul li {
+    margin: 15px 0;
+}
+
+/* Estilo de los enlaces (botones) */
+.menu-container ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4CAF50; /* Verde */
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-container ul li a:hover {
+    background-color: #45a049; /* Verde oscuro */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilo del botón "Volver al Menú Principal" */
+.btn-menu {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-menu:hover {
+    background-color: #45a049; /* Verde oscuro */
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .menu-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .menu-container h1 {
+        font-size: 20px;
+    }
+
+    .menu-container ul li a {
+        padding: 8px 16px;
+    }
+
+    .btn-menu {
+        padding: 8px 16px;
+    }
+}
